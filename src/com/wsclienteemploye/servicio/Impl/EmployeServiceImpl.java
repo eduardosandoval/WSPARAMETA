@@ -13,7 +13,7 @@ private EmployeDAO employeDAO = new EmployeDAO();
 	@Override
 	public Employe save(Employe employe) {
 		// TODO Auto-generated method stub
-		return null;
+		return employeDAO.save(employe);
 	}
 	
 	@Override

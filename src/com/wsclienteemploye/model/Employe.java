@@ -2,11 +2,10 @@
 
 import java.util.Date;
 
-
 public class Employe {
 
 
-	private Integer idemploye;
+	private int idemploye;
 	private String name;
 	private String lastname;
 	private String documenttype;

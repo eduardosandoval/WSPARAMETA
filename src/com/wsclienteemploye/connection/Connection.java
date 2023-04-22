@@ -1,12 +1,12 @@
 package com.wsclienteemploye.connection;
 
-import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class Connection {
-public  static final String JDBC_URL="jdbc:mysql://localost:3306/employe";
+	
+public  static final String JDBC_URL="jdbc:mysql://127.0.0.1:3306/employe";
 public  static final String JDBC_USER="root";
 public  static final String JDBC_PASSWORD="eduardo";
 public  static final String JDBC_NAME="com.mysql.cj.jdbc.Driver";
