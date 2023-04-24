@@ -41,6 +41,9 @@ public class EmployeDAO  {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			connection.preparedStatementClose(stmt);
+			connection.connectionClose(conn);
 		}
 		// TODO Auto-generated method stub
 		return rows;
