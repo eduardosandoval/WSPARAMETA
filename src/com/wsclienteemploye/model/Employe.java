@@ -1,16 +1,14 @@
  package com.wsclienteemploye.model;
 
-import java.util.Date;
-
 public class Employe {
 
 
-	private int idemploye;
+	private Integer idemploye;
 	private String name;
 	private String lastname;
 	private String documenttype;
-	private Date birthdate;
-	private Date companydate;
+	private String birthdate;
+	private String  companydate;
 	private double salary;
 	private String post;
 	
@@ -18,13 +16,13 @@ public class Employe {
 		
 	}
 	
-	public Employe(Integer idemploye, String name, String lastname, String documenttype, Date birthdate,
-			Date companydate, Double salary, String post) {
+	public Employe(Integer idemploye, String name, String lastname, String documenttype, String birthdate,
+			String companydate, Double salary, String post) {
 		this.idemploye = idemploye;
 		this.name = name;
 		this.lastname = lastname;
 		this.documenttype = documenttype;
-		this.birthdate = birthdate;
+		this.birthdate =  birthdate;
 		this.companydate = companydate;
 		this.salary = salary;
 		this.post = post;
@@ -53,18 +51,7 @@ public class Employe {
 	public void setDocumenttype(String documenttype) {
 		this.documenttype = documenttype;
 	}
-	public Date getBirthdate() {
-		return birthdate;
-	}
-	public void setBirthdate(Date birthdate) {
-		this.birthdate = birthdate;
-	}
-	public Date getCompanydate() {
-		return companydate;
-	}
-	public void setCompanydate(Date companydate) {
-		this.companydate = companydate;
-	}
+
 	public Double getSalary() {
 		return salary;
 	}
@@ -76,6 +63,30 @@ public class Employe {
 	}
 	public void setPost(String post) {
 		this.post = post;
+	}
+
+	public String getBirthdate() {
+		return birthdate;
+	}
+
+	public void setBirthdate(String birthdate) {
+		this.birthdate = birthdate;
+	}
+
+	public String getCompanydate() {
+		return companydate;
+	}
+
+	public void setCompanydate(String companydate) {
+		this.companydate = companydate;
+	}
+
+	public void setIdemploye(int idemploye) {
+		this.idemploye = idemploye;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
 	}
 
 }

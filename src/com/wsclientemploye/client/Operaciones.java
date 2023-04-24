@@ -4,15 +4,19 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 import com.wsclienteemploye.model.Employe;
+import com.wsclienteemploye.model.Response;
 
 @WebService
 public interface Operaciones {
 
 	
 	@WebMethod
-	public Employe save (Employe employe);
+	public Response save (Employe employe);
 	
 	@WebMethod
-	public Employe GetEmployeId (int idEmploye);
+	public Employe getEmployeId (int idEmploye);
+
+	@WebMethod
+	public Response getDocumentType (String documentType);
 
 }
